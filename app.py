@@ -8,7 +8,7 @@ from streamlit_lottie import st_lottie
 import json
 
 st.title('Análisis de Sentimiento 🎭˖ ࣪⊹')
-col1, col2, col3 = st.columns([1,2])
+col1, col2 = st.columns([1,2])
 with col1:
     image = Image.open('emocion.png')
     st.image(image)
