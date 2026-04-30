@@ -7,10 +7,13 @@ from googletrans import Translator
 from streamlit_lottie import st_lottie
 import json
 
-st.title('Análisis de Sentimiento')
-image = Image.open('emoticones.jpg')
-st.image(image)
-st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
+st.title('Análisis de Sentimiento 🎭˖ ࣪⊹')
+col1, col2, col3 = st.columns([1,2])
+with col1:
+    image = Image.open('emocion.png')
+    st.image(image)
+with col2:
+    st.subheader("Por favor despliega y escribe en el campo de texto la frase que deseas analizar")
 
 translator = Translator()
 
